@@ -40,6 +40,15 @@ public class LoginResponse extends GenericResponse{
     @SerializedName("qrImage")
     private String qrImage;
 
+    @SerializedName("merchantId")
+    private String merchantId;
+
+    @SerializedName("merchantImage")
+    private String merchantImage;
+
+    @SerializedName("isRedeemOtp")
+    private int isRedeemOtp;
+
     public String getAuthToken() {
         return authToken;
     }
@@ -126,6 +135,30 @@ public class LoginResponse extends GenericResponse{
 
     public void setQrImage(String qrImage) {
         this.qrImage = qrImage;
+    }
+
+    public String getMerchantId() {
+        return merchantId;
+    }
+
+    public void setMerchantId(String merchantId) {
+        this.merchantId = merchantId;
+    }
+
+    public String getMerchantImage() {
+        return merchantImage;
+    }
+
+    public void setMerchantImage(String merchantImage) {
+        this.merchantImage = merchantImage;
+    }
+
+    public int getIsRedeemOtp() {
+        return isRedeemOtp;
+    }
+
+    public void setIsRedeemOtp(int isRedeemOtp) {
+        this.isRedeemOtp = isRedeemOtp;
     }
 
     /*

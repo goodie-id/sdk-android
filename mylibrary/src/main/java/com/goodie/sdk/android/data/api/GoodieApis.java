@@ -114,7 +114,6 @@ public enum GoodieApis {
         return api.memberPoint(authToken, deviceUniqId, memberId, merchantId);
     }
 
-
     //promotion inquiry
     public Observable<PromotionInquiryResponse> doPromotionInquiry(String authToken, String deviceUniqId, String memberId, String merchantId, String storeId,
                                                                    BasicRulesReq basicRulesReq, List<CustomRulesReq> customRulesReq, Context context) {
